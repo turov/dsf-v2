@@ -1,0 +1,169 @@
+.info-block__title {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.info-block{
+    padding: 24px 12px 8px;
+    background: #C4E0EE;
+    border-top-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+}
+
+.info-block__text {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.info-block--about {
+    padding: 22px 50px 28px;
+}
+
+.info-block__about-content .title {
+    background-image: url("../img/book.png");
+    background-size: 49px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 50px;
+    margin-bottom: 6px;
+}
+
+.info-block--brands .title {
+    background-image: url("../img/cleean.png");
+    padding-top: 50px;
+    background-position: center top;
+    padding-bottom: 0;
+}
+
+.info-block__about-content .text {
+    margin-bottom: 14px;
+}
+
+.info-block__about-content .button {
+    margin-bottom: 38px;
+}
+
+.info-block__about-list {
+
+}
+
+.info-block__about-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.info-block__about-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-block__about-item-content-container {
+    width: 195px;
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1px 6px 17px rgba(27, 145, 255, 0.50);
+}
+
+.info-block__about-item:nth-child(odd) .info-block__about-item-content-container {
+    background-color: #FFFFFF;
+}
+
+.info-block__about-item-content-container h6 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (min-width: 1232px) {
+    .info-block {
+        padding: 24px 0 40px;
+        border-top-left-radius: 230px;
+        border-bottom-right-radius: 230px;
+    }
+
+    .info-block__container {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .info-block__content {
+        width: 30%;
+    }
+
+    .info-block__content:nth-child(1) {
+        width: 100%;
+        margin-bottom: 52px;
+    }
+
+    .info-block__text {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .info-block__title {
+        font-size: 24px;
+    }
+
+    .info-block__title--main {
+        font-size: 48px;
+        margin-bottom: 18px;
+    }
+
+    .info-block--about {
+        padding: 22px 50px 51px;
+    }
+
+    .info-block__about-content {
+        width: 100%;
+        margin-bottom: 51px;
+    }
+
+    .info-block__about-content .title {
+        background-size: 116px;
+        padding-bottom: 134px;
+        margin-bottom: 16px;
+    }
+
+    .info-block--brands .title {
+        padding-top: 134px;
+        padding-bottom: 0;
+    }
+
+    .info-block__about-content .text {
+        max-width: 525px;
+        margin: 0 auto 49px;
+    }
+
+    .info-block__about-list {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-block__about-item {
+        margin-bottom: 0;
+    }
+
+
+    .info-block__about-item-content-container {
+        width: 232px;
+        height: 232px;
+        padding: 10px;
+
+    }
+
+    .info-block__about-item-content-container h6 {
+        font-size: 24px;
+    }
+}

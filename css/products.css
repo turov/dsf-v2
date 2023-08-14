@@ -1,0 +1,124 @@
+.products {
+    padding-top: 48px;
+}
+
+.products .title {
+    margin-bottom: 38px;
+}
+
+.products:last-child {
+    padding-bottom: 10px;
+}
+
+.products__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.products__item-circle {
+    width: 213px;
+    height: 213px;
+    border-radius: 50%;
+    box-shadow: 1px 6px 17px rgba(27, 145, 255, 0.50);
+    margin-bottom: 16px;
+}
+
+.products__item-circle b {
+    display: block;
+    max-width: 130px;
+    margin: 0 auto 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 32px 0 0;
+}
+
+.products__item-circle span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    max-width: 130px;
+    margin: 0 auto 6px;
+}
+
+.products__item-circle img {
+    display: block;
+    max-width: 140px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (min-width: 1232px) {
+    .products {
+        padding-top: 72px;
+    }
+
+    .products__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .products .title {
+        margin-bottom: 68px;
+    }
+
+    .products__list {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    .products__list::before {
+        content: '';
+        width: 772px;
+        height: 1px;
+        background: #FFB930;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .products:last-child .products__list {
+        padding-bottom: 0;
+    }
+
+    .products:last-child .products__list::before {
+        display: none;
+    }
+
+    .products__item {
+        width: 33.333%;
+    }
+
+    .products__item-circle {
+        width: 277px;
+        height: 277px;
+        margin-bottom: 48px;
+    }
+
+    .products__item-circle b {
+        display: block;
+        max-width: 180px;
+        margin: 0 auto 8px;
+        font-size: 24px;
+        padding: 48px 0 0;
+    }
+
+    .products__item-circle span {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .products__item-circle img {
+        max-width: 180px;
+    }
+
+    .products__item {
+        margin-bottom: 48px;
+    }
+}

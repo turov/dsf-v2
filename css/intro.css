@@ -1,0 +1,73 @@
+.intro {
+    padding: 24px 10px 16px;
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+}
+
+.intro .title--h1 {
+    margin-bottom: 90px;
+}
+
+.intro--products {
+    background-image: url("../img/intro-product.jpg");
+    padding: 14px 32px 14px;
+    min-height: 250px;
+    background-position: center;
+}
+
+.intro--products .title {
+    font-size: 20px;
+}
+
+.intro--brands {
+    padding: 14px 10px;
+    min-height: 240px;
+    background-image: url("../img/brands.jpeg");
+    background-position: bottom;
+}
+
+.intro--brands .title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.intro--brands p {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (min-width: 1232px) {
+    .intro {
+        padding: 148px 10px 94px;
+    }
+
+    .intro .title--h1 {
+        margin-bottom: 313px;
+    }
+
+    .intro--products {
+        padding: 52px 10px;
+        min-height: 685px;
+    }
+
+    .intro--products .title {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .intro--brands {
+        padding: 52px 10px;
+        min-height: 685px;
+    }
+
+    .intro--brands .title {
+        font-size: 48px;
+        margin-bottom: 14px;
+    }
+
+    .intro--brands p {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}

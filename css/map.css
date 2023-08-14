@@ -1,0 +1,32 @@
+.map {
+    padding: 48px 10px 0;
+}
+
+.map .title {
+    margin-bottom: 38px;
+}
+
+.map img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1232px) {
+    .map {
+        padding: 72px 0 0;
+    }
+
+    .map__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .map__container .title {
+        margin-bottom: 68px;
+    }
+
+    .map__container img {
+        width: 100%;
+    }
+}

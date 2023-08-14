@@ -1,0 +1,140 @@
+.contacts-banner {
+    background-color: #C4E0EE;
+    padding: 0 10px;
+}
+
+.contacts-banner__container {
+    padding: 22px 0 84px;
+    max-width: 355px;
+    width: 100%;
+    background-image: url("../img/contacts-mobile.png");
+    background-size: 130px 126px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.contacts-banner .title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.contacts-banner .contacts__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.contacts {
+    padding-top: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.contacts__item-circle {
+    width: 165px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1px 6px 17px rgba(27, 145, 255, 0.50);
+    margin-bottom: 16px;
+    background: var(--c-gradinet-yellow);
+}
+
+.contacts__item b {
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.contacts__link {
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 27px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.contacts__link-mail {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg id='Tools / Technology / email / 20'%3E%3Cpath id='Fill' fill-rule='evenodd' clip-rule='evenodd' d='M17.5 3.75H2.5C1.80964 3.75 1.25 4.30964 1.25 5V15C1.25 15.6904 1.80964 16.25 2.5 16.25H17.5C18.1904 16.25 18.75 15.6904 18.75 15V5C18.75 4.30964 18.1904 3.75 17.5 3.75ZM16.125 5L10 9.2375L3.875 5H16.125ZM2.5 15V5.56875L9.64375 10.5125C9.858 10.6611 10.142 10.6611 10.3562 10.5125L17.5 5.56875V15H2.5Z' fill='%23161616'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.contacts__link-tel {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cg id='Actions / Toggle / phone / 16'%3E%3Cpath id='Fill' fill-rule='evenodd' clip-rule='evenodd' d='M16.7501 18.125H16.6438C4.3626 17.4187 2.61885 7.05625 2.3751 3.89375C2.33543 3.39714 2.49503 2.90516 2.81867 2.52641C3.14231 2.14766 3.60338 1.91327 4.1001 1.875H7.54385C8.0561 1.8745 8.51681 2.1866 8.70635 2.6625L9.65635 5C9.84332 5.46446 9.73511 5.99569 9.38135 6.35L8.0501 7.69375C8.47605 10.1143 10.3681 12.0114 12.7876 12.4438L14.1438 11.1C14.5035 10.7501 15.0376 10.6492 15.5001 10.8438L17.8563 11.7875C18.3249 11.9829 18.6287 12.4423 18.6251 12.95V16.25C18.6251 17.2855 17.7856 18.125 16.7501 18.125ZM4.2501 3.125C3.90492 3.125 3.6251 3.40482 3.6251 3.75V3.8C3.9126 7.5 5.75635 16.25 16.7126 16.875C16.8784 16.8852 17.0415 16.829 17.1658 16.7188C17.2901 16.6086 17.3654 16.4534 17.3751 16.2875V12.95L15.0188 12.0062L13.2251 13.7875L12.9251 13.75C7.4876 13.0687 6.7501 7.63125 6.7501 7.575L6.7126 7.275L8.4876 5.48125L7.5501 3.125H4.2501Z' fill='%23161616'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.contacts__item span {
+    font-size: 16px;
+    max-width: 165px;
+    margin: -8px auto 16px;
+    text-align: center;
+}
+
+@media (min-width: 1232px) {
+    .contacts-banner {
+        padding: 0;
+    }
+
+    .contacts-banner__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 99px 0 155px;
+        background-image: url("../img/contacts-desk.png");
+        background-size: 266px 365px;
+    }
+
+    .contacts-banner .title {
+        font-size: 96px;
+        margin-bottom: 18px;
+    }
+
+    .contacts-banner .contacts__subtitle {
+        font-size: 64px;
+    }
+
+    .contacts {
+        padding: 72px 0 0;
+    }
+
+    .contacts:last-child {
+        padding-bottom: 72px;
+    }
+
+    .contacts__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contacts__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contacts__item {
+        width: 33.333%;
+        margin-bottom: 0;
+        margin-top: 48px;
+    }
+
+    .contacts__item-circle {
+        width: 198px;
+        height: 198px;
+        margin-bottom: 32px;
+    }
+
+    .contacts__item b {
+        font-size: 24px;
+    }
+
+    .contacts__item span {
+        max-width: 198px;
+    }
+}

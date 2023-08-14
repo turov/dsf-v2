@@ -1,0 +1,11 @@
+:root {
+    --c-white: #FFF;
+    --c-black: #000;
+    --c-gradinet-main: linear-gradient(90deg, #0094DA 0%, #130682 70.83%);
+    --c-gradient-secondary: linear-gradient(136deg, #59C6FF 0%, #0090DC 100%);
+    --c-gradinet-yellow: linear-gradient(90deg, #FFBB0D 0%, #EE9002 100%);
+    --c-light-blue-1: #DCF3FF;
+    --c-light-blue-2: #E9F4FF;
+    --c-heavy-blue: #075FB9;
+    --c-yellow: #FFB930;
+}

@@ -1,0 +1,22 @@
+.button {
+    display: block;
+    border: none;
+    background: var(--c-yellow);
+    border-radius: 10px;
+    padding: 12px 48px;
+    text-align: center;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.button--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1232px) {
+    .button {
+        font-size: 16px;
+        padding: 16px 55px;
+    }
+}
