@@ -45,11 +45,13 @@
 }
 
 .blocks__block:nth-child(4) .blocks__block-link {
-    background-image: url("../img/block4.png");
-    background-size: 165px 98px;
-    background-position: center top;
+    background-image: url("../img/block4.jpg");
     background-repeat: no-repeat;
-    background-color: #C4E0EE;
+    background-size: cover;
+    /*background-size: 165px 98px;*/
+    /*background-position: center top;*/
+    /*background-repeat: no-repeat;*/
+    /*background-color: #C4E0EE;*/
 }
 
 @media (min-width: 1232px) {
@@ -83,7 +85,7 @@
         margin-bottom: 12px;
     }
 
-    .blocks__block:nth-child(4) .blocks__block-link {
-        background-size: 495px 295px;
-    }
+    /*.blocks__block:nth-child(4) .blocks__block-link {*/
+    /*    background-size: 495px 295px;*/
+    /*}*/
 }

@@ -59,6 +59,56 @@
     font-size: 16px;
 }
 
+.banner {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: backgroundchange 21s;
+    padding: 23.8%;
+    animation-iteration-count: infinite;
+}
+
+.banner__title {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.55);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes backgroundchange {
+    0% { background-image: url('../img/caro/1.jpg'); }
+    14% { background-image: url('../img/caro/2.jpg'); }
+    28% { background-image: url('../img/caro/3.jpg'); }
+    42% { background-image: url('../img/caro/4.jpg'); }
+    56% { background-image: url('../img/caro/5.jpg'); }
+    70% { background-image: url('../img/caro/6.jpg'); }
+    84% { background-image: url('../img/caro/7.jpg'); }
+    100% { background-image: url('../img/caro/1.jpg'); }
+}
+
+.intro-video {
+    padding: 72px 0;
+    /*background-image: url("../img/goose.svg");*/
+    /*background-repeat: repeat;*/
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    width: 310px;
+    height: 165px;
+}
+
+
 @media (min-width: 1232px) {
     .intro {
         padding: 148px 10px 94px;
@@ -91,5 +141,19 @@
     .intro--brands p {
         font-size: 24px;
         font-weight: 700;
+    }
+
+    .banner__title {
+        padding: 16px 50px;
+        max-width: 1116px;
+    }
+
+    .intro-video {
+        padding: 64px 0;
+    }
+
+    .video video {
+        width: 922px;
+        height: 493px;
     }
 }
