@@ -21,7 +21,10 @@
 .category__item-container img {
     display: block;
     margin: 0 auto 24px;
+    width: 239px;
+    height: 138px;
 }
+
 
 @media (min-width: 1232px) {
     .category {
@@ -50,7 +53,6 @@
         height: 420px;
         margin: 0;
     }
-
 
     .category__item-container img {
         display: block;
