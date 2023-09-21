@@ -1,5 +1,5 @@
 .about-reviews {
-    padding: 48px 10px;
+    padding: 0 10px 48px;
 }
 
 .about-reviews  .title {
@@ -39,7 +39,7 @@
 
 @media (min-width: 1232px) {
     .about-reviews {
-        padding: 72px 0;
+        padding: 0 0 72px;
     }
 
     .about-reviews__container {

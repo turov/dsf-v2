@@ -1,7 +1,13 @@
 body {
     background-color: var(--c-white);
     color: var(--c-black);
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Rubik', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: 'Work Sans', sans-serif;*/
+    /*font-family: 'Martian Mono', monospace;*/
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
@@ -95,5 +101,15 @@ ul {
     .text {
         font-size: 16px;
     }
+}
+
+.js-floated {
+    position: relative;
+    top: 0;
+    transition: all ease 1s;
+}
+
+.sunk {
+    top: 1000px;
 }
 

@@ -1,5 +1,5 @@
 .map {
-    padding: 48px 10px 0;
+    padding: 48px 10px 48px;
 }
 
 .map .title {
@@ -14,7 +14,7 @@
 
 @media (min-width: 1232px) {
     .map {
-        padding: 72px 0 0;
+        padding: 72px 0 72px;
     }
 
     .map__container {

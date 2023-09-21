@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-          rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"-->
+<!--          rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <header class="header">
     <div class="header__container">
-        <a class="header__logo">
+        <a href="index.html" class="header__logo">
             <img src="img/logo.png" width="84" height="42" alt="DSF">
         </a>
         <button class="header__menu-btn">
@@ -23,11 +25,6 @@
         </button>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <a href="index.html" class="header__nav-link">
-                        Home
-                    </a>
-                </li>
                 <li class="header__nav-item">
                     <a href="company.html" class="header__nav-link">
                         Company
@@ -55,8 +52,10 @@
 
 <main class="main">
     <section class="intro intro--brands">
-        <h1 class="title title--h1 t-center">Our Brands</h1>
-        <p>Brands, you can trust in your home</p>
+        <div class="intro-title-wrapper">
+            <h1 class="title title--h1 t-center">Our Brands</h1>
+            <p>Brands, you can trust in your home</p>
+        </div>
     </section>
 
     <section class="info-block info-block--brands">
@@ -75,22 +74,22 @@
             <!--                <h3 class="title title&#45;&#45;h3">Our brands</h3>-->
             <!--                <a href="#" class="button">Learn More</a>-->
             <!--            </div>-->
-            <ul class="brands__list">
+            <ul class="brands__list js-floated">
                 <li class="brands__item">
                     <div class="brands__item-img-container brands-intro__item-1">
-                        <img src="img/brand1.jpg" width="228" height="181" alt="">
+                        <img src="img/cleanissimo.png" width="156" height="88" alt="">
                     </div>
                     <a href="#" class="button button--center">Visit Site</a>
                 </li>
                 <li class="brands__item">
                     <div class="brands__item-img-container brands-intro__item-2">
-                        <img src="img/brand2.jpg" width="193" height="184" alt="">
+                        <img src="img/cleankleen.png" width="198" height="99" alt="">
                     </div>
                     <a href="#" class="button button--center">Visit Site</a>
                 </li>
                 <li class="brands__item">
                     <div class="brands__item-img-container brands-intro__item-3">
-                        <img src="img/brand3.jpg" width="190" height="143" alt="">
+                        <img src="img/dsf.svg" width="" alt="">
                     </div>
                     <a href="#" class="button button--center">Visit Site</a>
                 </li>
@@ -101,7 +100,7 @@
     <section class="brands-desc brands-desc-1">
         <div class="brand-desc__container">
             <div class="brands-desc__content">
-                <h3 class="title title--h3">CleanKleen</h3>
+                <h3 class="title title--h3">Cleanissimo</h3>
                 <p class="text">When the Instant Pot first became a cultural phenomenon and kitchen must-have, it
                     revolutionized home cooking for a global community of food lovers whose passion has since inspired
                     countless recipes, books, and online forums. Now, Instant Brands has expanded its line to include
@@ -116,7 +115,7 @@
     <section class="brands-desc brands-desc-2">
         <div class="brand-desc__container">
             <div class="brands-desc__content">
-                <h3 class="title title--h3">2</h3>
+                <h3 class="title title--h3">CleanKleen</h3>
                 <p class="text">When the Instant Pot first became a cultural phenomenon and kitchen must-have, it
                     revolutionized home cooking for a global community of food lovers whose passion has since inspired
                     countless recipes, books, and online forums. Now, Instant Brands has expanded its line to include
@@ -131,7 +130,7 @@
     <section class="brands-desc brands-desc-3">
         <div class="brand-desc__container">
             <div class="brands-desc__content">
-                <h3 class="title title--h3">3</h3>
+                <h3 class="title title--h3">DSF</h3>
                 <p class="text">When the Instant Pot first became a cultural phenomenon and kitchen must-have, it
                     revolutionized home cooking for a global community of food lovers whose passion has since inspired
                     countless recipes, books, and online forums. Now, Instant Brands has expanded its line to include
@@ -239,5 +238,6 @@
 
 <script src="js/menu.js"></script>
 <script src="js/brands.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

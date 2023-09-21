@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-          rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"-->
+<!--          rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -23,11 +25,6 @@
         </button>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <a class="header__nav-link header__nav-link--active">
-                        Home
-                    </a>
-                </li>
                 <li class="header__nav-item">
                     <a href="company.html" class="header__nav-link">
                         Company
@@ -57,13 +54,18 @@
     <div class="banner" id="banner">
         <h1 class="title title--h1 t-center banner__title">Get what your home needs</h1>
     </div>
-    <div class="intro-video">
-        <div class="video">
-            <video autoplay loop muted>
-                <source src="video/video.mp4" type="video/mp4">
-            </video>
-        </div>
+    <div class="video-container">
+        <video class="background-video" autoplay loop controls muted>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
     </div>
+<!--    <div class="intro-video">-->
+<!--        <div class="video">-->
+<!--            <video autoplay loop muted controls>-->
+<!--                <source src="video/video.mp4" type="video/mp4">-->
+<!--            </video>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <section class="info-block">
         <div class="info-block__container">
@@ -98,7 +100,7 @@
                 <h3 class="title title--h3">Our brands</h3>
                 <a href="#" class="button">Learn More</a>
             </div>
-            <ul class="brands__list">
+            <ul class="brands__list js-floated">
                 <li class="brands__item">
                     <a href="category-cleanissimo.html" class="brands__item-img-container">
                         <img src="img/cleanissimo.png" width="156" height="88" alt="">
@@ -220,5 +222,6 @@
 </footer>
 
 <script src="js/menu.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

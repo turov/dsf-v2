@@ -6,14 +6,46 @@
     overflow: hidden;
 }
 
-.background-video {
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    right: 0;
+.intro--company {
+    padding: 0;
+    min-height: 206px;
+}
+
+.intro-title-wrapper {
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.banner-video {
+    /*position: absolute;*/
+    display: block;
+    padding: 0;
     top: 0;
-    bottom: 0;
-    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+    padding: 0 0 72px;
+}
+
+.background-video {
+    width: 100%;
+    object-fit: cover;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*z-index: 1;*/
 }
 
 .intro .title,
@@ -114,6 +146,13 @@
         padding: 148px 10px 94px;
     }
 
+    .intro--company {
+        padding: 0;
+    }
+
+    .video-container {
+        padding: 0 0 64px;
+    }
     .intro .title--h1 {
         margin-bottom: 313px;
     }
@@ -146,6 +185,11 @@
     .banner__title {
         padding: 16px 50px;
         max-width: 1116px;
+    }
+
+    .intro-title-wrapper {
+        padding: 16px 50px;
+        max-width: fit-content;
     }
 
     .intro-video {

@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-          rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"-->
+<!--          rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <header class="header">
     <div class="header__container">
-        <a class="header__logo">
+        <a href="index.html" class="header__logo">
             <img src="img/logo.png" width="84" height="42" alt="DSF">
         </a>
         <button class="header__menu-btn">
@@ -23,11 +25,6 @@
         </button>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <a href="index.html" class="header__nav-link">
-                        Home
-                    </a>
-                </li>
                 <li class="header__nav-item">
                     <a class="header__nav-link header__nav-link--active">
                         Company
@@ -54,8 +51,11 @@
 </header>
 
 <main class="main">
-    <section class="intro">
-        <h1 class="title title--h1 t-center">Taking care of you is what we do best</h1>
+    <section class="intro intro--company">
+<!--        <h1 class="title title&#45;&#45;h1 t-center">Taking care of you is what we do best</h1>-->
+        <video class="banner-video" autoplay loop muted>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
     </section>
 
     <section class="info-block info-block--about">
@@ -67,7 +67,7 @@
                     in the United States and the Asia-Pacific region, and retail channels around the world.</p>
                 <a href="#" class="button button--center">Learn More</a>
             </div>
-            <ul class="info-block__about-list">
+            <ul class="info-block__about-list js-floated">
                 <li class="info-block__about-item">
                     <div class="info-block__about-item-content-container">
                         <h6>Export worldwide</h6>
@@ -94,32 +94,32 @@
         </div>
     </section>
 
-    <section class="about-reviews">
-        <div class="about-reviews__container">
-            <h3 class="title title--h3">Reviews about us</h3>
-            <ul class="about-reviews__list">
-                <li class="about-reviews__item">
-                    <img src="img/rev1.jpg" width="340" height="340" alt="">
-                    <div class="about-reviews__review-content">
-                        <span>Alex Pavlova</span>
-                        <p class="text">Everything we make at Instant Brands starts with the consumer: who they are, what
-                            they need, how they live together. As their lives evolve, so do our products, keeping step and
-                            always looking to delight.</p>
-                    </div>
-                </li>
-                <li class="about-reviews__item">
-                    <img src="img/rev2.jpg" width="340" height="340" alt="">
-                    <div class="about-reviews__review-content">
-                        <span>Alex Pavlova</span>
-                        <p class="text">Everything we make at Instant Brands starts with the consumer: who they are, what
-                            they need, how they live together. As their lives evolve, so do our products, keeping step and
-                            always looking to delight.</p>
-                    </div>
-                </li>
-            </ul>
-            <a href="#" class="button button--center">See all</a>
-        </div>
-    </section>
+<!--    <section class="about-reviews">-->
+<!--        <div class="about-reviews__container">-->
+<!--            <h3 class="title title&#45;&#45;h3">Reviews about us</h3>-->
+<!--            <ul class="about-reviews__list">-->
+<!--                <li class="about-reviews__item">-->
+<!--                    <img src="img/rev1.jpg" width="340" height="340" alt="">-->
+<!--                    <div class="about-reviews__review-content">-->
+<!--                        <span>Alex Pavlova</span>-->
+<!--                        <p class="text">Everything we make at Instant Brands starts with the consumer: who they are, what-->
+<!--                            they need, how they live together. As their lives evolve, so do our products, keeping step and-->
+<!--                            always looking to delight.</p>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="about-reviews__item">-->
+<!--                    <img src="img/rev2.jpg" width="340" height="340" alt="">-->
+<!--                    <div class="about-reviews__review-content">-->
+<!--                        <span>Alex Pavlova</span>-->
+<!--                        <p class="text">Everything we make at Instant Brands starts with the consumer: who they are, what-->
+<!--                            they need, how they live together. As their lives evolve, so do our products, keeping step and-->
+<!--                            always looking to delight.</p>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <a href="#" class="button button&#45;&#45;center">See all</a>-->
+<!--        </div>-->
+<!--    </section>-->
 </main>
 <footer class="footer">
     <div class="footer__container">
@@ -178,5 +178,6 @@
 </footer>
 
 <script src="js/menu.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

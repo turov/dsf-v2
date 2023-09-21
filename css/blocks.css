@@ -9,12 +9,18 @@
 .blocks__block-link {
     height: 194px;
     border-radius: 6px;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
     margin-bottom: 16px;
     box-shadow: 1px 6px 17px rgba(27, 145, 255, 0.50);
+    transition: background-size 0.3s ease;
+}
+
+.blocks__block-link:hover {
+    background-size: 110%;
 }
 
 .blocks__block-content {
@@ -46,12 +52,6 @@
 
 .blocks__block:nth-child(4) .blocks__block-link {
     background-image: url("../img/block4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-size: 165px 98px;*/
-    /*background-position: center top;*/
-    /*background-repeat: no-repeat;*/
-    /*background-color: #C4E0EE;*/
 }
 
 @media (min-width: 1232px) {
