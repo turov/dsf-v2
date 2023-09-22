@@ -20,6 +20,9 @@
     .map__container {
         max-width: 1200px;
         margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        background-color: var(--c-white);
     }
 
     .map__container .title {

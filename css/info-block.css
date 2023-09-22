@@ -17,8 +17,10 @@
 }
 
 .info-block--about {
+    position: relative;
     margin-top: 24px;
     padding: 22px 50px 28px;
+    z-index: -2;
 }
 
 .info-block__about-content .title {

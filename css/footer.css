@@ -101,7 +101,7 @@
         margin-right: 0;
     }
 
-    .footer__links li:last-child a {
-        font-size: 24px;
-    }
+    /*.footer__links li:last-child a {*/
+    /*    font-size: 24px;*/
+    /*}*/
 }

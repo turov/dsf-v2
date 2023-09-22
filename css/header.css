@@ -76,6 +76,7 @@
 
 .header__nav {
     position: absolute;
+    z-index: 4;
     display: none;
     background-color: var(--c-white);
     left: 0;
