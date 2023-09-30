@@ -12,6 +12,15 @@
     height: auto;
 }
 
+.map video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+}
+
 @media (min-width: 1232px) {
     .map {
         padding: 72px 0 72px;
