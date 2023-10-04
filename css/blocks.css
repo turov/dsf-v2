@@ -12,7 +12,7 @@
 .blocks__block-link {
     height: 194px;
     border-radius: 6px;
-    background-size: 100%;
+    background-size: 102%;
     background-position: center top;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
 }
 
 .blocks__block-link:hover {
-    background-size: 110%;
+    background-size: 112%;
 }
 
 .blocks__block-content {
@@ -42,19 +42,19 @@
 /*}*/
 
 .blocks__block:nth-child(1) .blocks__block-link {
-    background-image: url("../img/block1.jpg");
+    background-image: url("../img/Our Company.png");
 }
 
 .blocks__block:nth-child(2) .blocks__block-link {
-    background-image: url("../img/block2.jpg");
+    background-image: url("../img/Careers.png");
 }
 
 .blocks__block:nth-child(3) .blocks__block-link {
-    background-image: url("../img/block3.jpg");
+    background-image: url("../img/Contact us.png");
 }
 
 .blocks__block:nth-child(4) .blocks__block-link {
-    background-image: url("../img/block4.jpg");
+    background-image: url("../img/News room.png");
 }
 
 @media (min-width: 1232px) {
