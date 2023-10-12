@@ -159,6 +159,15 @@
         justify-content: space-between;
     }
 
+    .info-block__about-list--2-items {
+        justify-content: center;
+    }
+
+    .info-block__about-list--2-items .info-block__about-item {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     .info-block__about-item {
         margin-bottom: 0;
     }
