@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const changeSlide = (index) => {
         paginationItems.forEach((elem) => elem.classList.remove('main-banner__pagination-item--active'));
         paginationItems[index].classList.add('main-banner__pagination-item--active');
-        image.style.backgroundImage = `url(/img/slider-${index}.jpg)`;
+        image.style.backgroundImage = `url(img/slider-${index}.jpg)`;
         currentIndex = index;
     };
 
