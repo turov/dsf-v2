@@ -3,16 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const pagination = document.querySelector('.main-banner__pagination-list');
     const paginationItems = pagination.querySelectorAll('.main-banner__pagination-item');
     let currentIndex = 0;
+    let autoSlideInterval;
 
     if (!image || !pagination || paginationItems.length === 0) {
         console.error('Required elements not found on the page');
         return;
     }
 
+    const resetAutoSlide = () => {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(autoSlide, 3000);
+    };
+
     const changeSlide = (index) => {
         paginationItems.forEach((elem) => elem.classList.remove('main-banner__pagination-item--active'));
         paginationItems[index].classList.add('main-banner__pagination-item--active');
-        image.style.backgroundImage = `url(img/slider-${index}.jpg)`;
+        image.src = `img/slider-${index}.jpg`;
         currentIndex = index;
     };
 
@@ -21,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!item) return;
         const index = Array.from(paginationItems).indexOf(item);
         changeSlide(index);
+        resetAutoSlide();
     });
 
     const autoSlide = () => {
@@ -28,5 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
         changeSlide(nextIndex);
     };
 
-    setInterval(autoSlide, 3000); // смена слайда каждые 3 секунды
+    autoSlideInterval = setInterval(autoSlide, 3000); // смена слайда каждые 3 секунды
 });
